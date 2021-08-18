@@ -12,7 +12,7 @@ Table:
 | ----- | ----- |
 | Content | More Content |
 
-* [Subfeature](/feature/feature)
+* [Subfeature](/docs/feature/feature)
 * [Another Feature](/docs/feature/feature_two)
 
 ###### tags: `feature`
