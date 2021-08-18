@@ -10,6 +10,6 @@ This feature does stuff.
 
 ![Docusaurus logo](/img/docusaurus.png)
 
-* [Back to the Overview](/feature/overview)
+* [Back to the Overview](/docs/feature/feature)
 
 ###### tags: `feature`
