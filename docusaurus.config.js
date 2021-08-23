@@ -17,20 +17,40 @@ module.exports = {
             title: 'Doc Test',
             logo: {
                 alt: 'My Site Logo',
-                src: 'img/logo.svg',
+                src: 'img/Sonatype_Documentation_Logo.svg',
             },
             items: [
                 {
-                    to: 'lift/greeting',
+                    type: 'dropdown',
+                    label: 'Test', 
                     position: 'left',
-                    label: 'Lift',
-                }, 
-                {
-                    to: 'repo/repo', 
-                    position: 'left',
-                    label: 'Repo',
+                    items: [
+                         {
+                            type: 'docsVersionDropdown',
+                            docspluginid: 'repo',
+                            position: 'left',
+                            // dropdownitemsafter: [{to: '/versions', label: 'all versions'}],
+                        },
+                            {
+                                type: 'doc',
+                                label: 'Repo',
+                                docsPluginId: 'repo',
+                                docId: 'feat',
+                            },
+                    ],
                 },
-                {to: '/blog', label: 'Blog', position: 'left'},
+                {
+                    type: 'docsVersionDropdown',
+                    docsPluginId: 'lift',
+                },
+                /*{
+                    type: 'docsversiondropdown',
+                    docspluginid: 'repo',
+                    position: 'left',
+                    // dropdownitemsafter: [{to: '/versions', label: 'all versions'}],
+                },*/
+                // disable blog
+                // {to: '/blog', label: 'Blog', position: 'left'},
                 {
                     href: 'https://github.com/Matt-Freeland/doctes',
                     label: 'GitHub',
@@ -94,13 +114,18 @@ module.exports = {
             {
                 docs: {
                     path: 'lift',
+                    id: 'lift',
                     routeBasePath: 'lift',
                     sidebarPath: require.resolve('./sidebarsLift.js'),
                     // Please change this to your repo.
                     editUrl:
                     'https://github.com/Matt-Freeland/doctest',
                     lastVersion: 'current',
-                    onlyIncludeVersions: ['current'],
+                    versions: {
+                        current: {
+                            label: 'Lift',
+                        },
+                    },
                 },
                 blog: {
                     showReadingTime: true,
@@ -120,6 +145,14 @@ module.exports = {
             {
                 id: 'repo',
                 path: 'repo',
+                includeCurrentVersion: true,
+                lastVersion: 'current',
+                versions: {
+                    current: {
+                        label: 'Repo',
+                        path: 'repo-current',
+                    }
+                },
                 routeBasePath: 'repo',
                 sidebarPath: require.resolve('./sidebarsRepo.js')
             },
