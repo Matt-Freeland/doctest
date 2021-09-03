@@ -99,6 +99,12 @@ module.exports = {
                 sidebarPath: require.resolve('./sidebarsRepo.js')
             },
         ],
+        ['@docusaurus/plugin-google-gtag'],
     ],
-
+    themeConfig: {
+        gtag: {
+            trackingID 'G-T89RL3L8H0',
+            anonymizeIP: true,
+        },
+    },
 };
