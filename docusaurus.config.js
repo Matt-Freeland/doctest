@@ -13,6 +13,7 @@ module.exports = {
     favicon: 'img/favicon.png',
     organizationName: 'matt-freeland', // Usually your GitHub org/user name.
     projectName: 'doctest', // Usually your repo name.
+    themes: ['@docusaurus/theme-live-codeblock'],
     themeConfig: {
         colorMode: {
             disableSwitch: true,
@@ -49,7 +50,14 @@ module.exports = {
                     label: 'Lift',
                     position: 'left',
                 },
-            ],
+                {
+                    type: 'doc',
+                    docsPluginId: 'demo',
+                    docId: 'demo',
+                    label: 'Demo',
+                    position: 'left',
+                }, 
+            ], 
         },
         footer: {
             style: 'dark',
@@ -58,6 +66,10 @@ module.exports = {
         prism: {
             theme: lightCodeTheme,
         },
+        gtag: {
+            trackingID: 'G-T89RL3L8H0',
+            anonymizeIP: true,
+        }, 
     },
     presets: [
         [
@@ -99,12 +111,22 @@ module.exports = {
                 sidebarPath: require.resolve('./sidebarsRepo.js')
             },
         ],
-        ['@docusaurus/plugin-google-gtag'],
+        [
+            '@docusaurus/plugin-content-docs',
+            {
+                id: 'demo',
+                path: 'demo',
+                versions: {
+                    current: {
+                        label: 'Demo',
+                        path: 'demo-1.x',
+                    },
+                }, 
+                routeBasePath: 'demo',
+                sidebarPath: require.resolve('./sidebarsDemo.js')
+            },
+        ],  
+        '@docusaurus/plugin-google-gtag',
     ],
-    themeConfig: {
-        gtag: {
-            trackingID 'G-T89RL3L8H0',
-            anonymizeIP: true,
-        },
-    },
+
 };

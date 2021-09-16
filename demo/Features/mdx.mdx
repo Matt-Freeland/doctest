@@ -1,0 +1,40 @@
+---
+id: mdx 
+sidebar_position: 3
+sidebar_label: 'MDX'
+---
+
+import PartialExample from './_markdown-partial-example.mdx'
+import Demo from  '/src/pages/_demo.mdx'
+import MdImage from './image.js'
+
+# MDX  Markdown with JSX support
+
+JSX is the format for React Components. MDX is markdown with with additional support for react components. This lets docusaurus do all sorts of neat things. 
+
+## Partials
+
+One of the most useful things is partials, which are markdown files that can be imported into `.mdx` files. These partials can even accept props for greater reusability. 
+
+putting this in our markdown file: 
+
+```
+<Demo version="1" />
+<Demo version="2" />
+<PartialExample name="Matt" />
+<PartialExample name="Lisa" />
+```
+
+results in:
+<Demo version="1" />
+<Demo version="2" /> 
+<PartialExample name="Matt" />
+<PartialExample name="Lisa" />
+
+This feature lets Docusaurus be very flexible and prevent lots of formatting. All the images below use the same react component with different props for easy image formatting.
+
+<MdImage justify="center" source="/static/img/docusaurus.png" alt="logo" />
+<MdImage justify="left" source="/static/img/docusaurus.png" alt="logo" />
+<MdImage justify="right" source="/static/img/docusaurus.png" alt="logo" />
+
+
