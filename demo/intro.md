@@ -9,7 +9,7 @@ sidebar_label: 'Intro'
 
 * **Docusaurus is a static site generator** 
 * It's free and open source
-* The project is maintaind by Facebook 
+* The project is maintained by Facebook 
 * Under the hood it's JavaScript and TypeScript -  with React and MDX 
    * React is also maintained by Facebook
 

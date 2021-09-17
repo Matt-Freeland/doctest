@@ -9,7 +9,7 @@ tags:
 
 # Markdown Features
 
-## Docusaurs supports pretty much all common markdown features
+## Docusaurus supports pretty much all common markdown features
 
 Such as... 
 

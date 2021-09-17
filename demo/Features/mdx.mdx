@@ -33,8 +33,33 @@ results in:
 
 This feature lets Docusaurus be very flexible and prevent lots of formatting. All the images below use the same react component with different props for easy image formatting.
 
-<MdImage justify="center" source="/static/img/docusaurus.png" alt="logo" />
-<MdImage justify="left" source="/static/img/docusaurus.png" alt="logo" />
-<MdImage justify="right" source="/static/img/docusaurus.png" alt="logo" />
+```jsx
+import React from 'react'
+
+const MdImage = ({justify, source, alt}) => {
+    const fbStyle = {
+        width: '100%',
+        display: 'flex',
+        justifyContent: justify
+    }
+    return (
+        <div style={fbStyle}>
+          <img src={source} alt={alt} />
+        </div>
+    )
+}
+
+export default MdImage
+```
+
+```
+<MdImage justify="center" source="/img/docusaurus.png" alt="logo" />
+<MdImage justify="left" source="/img/docusaurus.png" alt="logo" />
+<MdImage justify="right" source="/img/docusaurus.png" alt="logo" />
+```
+
+<MdImage justify="center" source="/img/docusaurus.png" alt="logo" />
+<MdImage justify="left" source="/img/docusaurus.png" alt="logo" />
+<MdImage justify="right" source="/img/docusaurus.png" alt="logo" />
 
 
