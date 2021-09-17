@@ -1,3 +1,21 @@
+# To-Do
+
+[] video embed
+   [] wistia
+   [] youtube
+[] colors
+[] logos
+[] Homepage art
+[] [customize sidebar](https://docusaurus.io/docs/sidebar)
+[] [search](https://docusaurus.io/docs/search)
+[] add content
+   [] Add refrence pages
+   [] Add guide pages
+[] Tagging
+[] [version content](https://docusaurus.io/docs/versioning)
+[] [versioning for multiple products](https://docusaurus.io/docs/docs-multi-instance)
+
+
 # Website
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.

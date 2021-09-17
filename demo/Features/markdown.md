@@ -1,0 +1,71 @@
+---
+id: mdfeatures
+sidebar_position: 1
+sidebar_label: 'Markdown Features'
+tags: 
+  - docs
+  - demo
+---
+
+# Markdown Features
+
+## Docusaurus supports pretty much all common markdown features
+
+Such as... 
+
+### Links
+[Both internal](../demo) and [external links](https://daringfireball.net/projects/markdown/syntax#link) are supported.
+
+### Lists
+
+1. thing one
+1. thing two
+    1. sub-thing 1
+    1. sub-thing 2
+1. thing three
+    * Unordered sub-thing
+    * Another unordered sub-thing
+
+### Tables
+
+| Column 1 | Column 2 | Column 3 |
+| --- | --- | --- |
+| Data 1 | Data 2 | Data 3 |
+| Data 4 | Data 5 |  <ul><li> Data 6</li><li>Data 7</li></ul> |
+
+### Code Blocks 
+
+Support for static code blocks
+
+```jsx {2}
+<Component data={data} >
+<p> It even supports syntax and line  highlighting!</p>
+</Component>
+```
+
+And live code blocks 
+
+```jsx live
+function Clock(props) {
+  const [date, setDate] = useState(new Date());
+  useEffect(() => {
+    var timerID = setInterval(() => tick(), 1000);
+
+    return function cleanup() {
+      clearInterval(timerID);
+    };
+  });
+
+  function tick() {
+    setDate(new Date());
+  }
+
+  return (
+    <div>
+      <h2>It is {date.toLocaleTimeString()}.</h2>
+    </div>
+  );
+}
+```
+
+
