@@ -66,10 +66,10 @@ module.exports = {
         prism: {
             theme: lightCodeTheme,
         },
-        gtag: {
+       /* gtag: {
             trackingID: 'G-T89RL3L8H0',
             anonymizeIP: true,
-        }, 
+        }, */ 
     },
     presets: [
         [
@@ -126,7 +126,7 @@ module.exports = {
                 sidebarPath: require.resolve('./sidebarsDemo.js')
             },
         ],  
-        '@docusaurus/plugin-google-gtag',
+        // '@docusaurus/plugin-google-gtag',
     ],
 
 };
