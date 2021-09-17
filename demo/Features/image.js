@@ -8,7 +8,7 @@ const MdImage = ({justify, source, alt}) => {
     }
     return (
         <div style={fbStyle}>
-          <img src={source} alt={alt} >
+          <img src={source} alt={alt} />
         </div>
     )
 }
