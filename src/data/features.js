@@ -19,7 +19,8 @@ import React from 'react'
 
 const FeatureList = [
     {
-        title: 'Nexus Repository Manager',
+       // title: 'Nexus Repository Manager',
+        title: 'Product 1',
         Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
         description: (
             <>
@@ -29,7 +30,8 @@ const FeatureList = [
         link: '/repo/repo-current/home',
     },
     {
-        title: 'Nexus Lifecycle & Firewall',
+        title: 'Product 2',
+//        title: 'Nexus Lifecycle & Firewall',
         Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
         description: (
             <>
@@ -39,7 +41,8 @@ const FeatureList = [
         link: '/',
     },
     {
-        title: 'Sonatype Lift',
+        title: 'Product 3',
+        //title: 'Sonatype Lift',
         Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
         description: (
             <>
@@ -49,7 +52,8 @@ const FeatureList = [
         link: '/lift/about',
     },
     {
-        title: 'Nexus Container',
+        title: 'Product 4',
+       // title: 'Nexus Container',
         Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
         description: (
             <>

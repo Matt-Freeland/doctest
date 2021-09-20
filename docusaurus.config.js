@@ -4,7 +4,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /* @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
     noIndex: 'true',
-    title: 'Sonatype Help',
+    title: 'Help Test',
     tagline: 'Guides, Reference, and more!',
     url: 'https://eloquent-visvesvaraya-619495.netlify.app/',
     baseUrl: '/',
@@ -21,12 +21,12 @@ module.exports = {
         },
         navbar: {
             title: 'Doc Test',
-            logo: {
+/*            logo: {
                 alt: 'My Site Logo',
                 src: 'img/Sonatype_Documentation_Logo.svg',
-            },
+            },*/
             items: [
-                {
+               /* {
                     type: 'dropdown',
                     position: 'left',
                     label: 'Repository',
@@ -49,7 +49,7 @@ module.exports = {
                     docId: 'about',
                     label: 'Lift',
                     position: 'left',
-                },
+                }, */
                 {
                     type: 'doc',
                     docsPluginId: 'demo',
