@@ -1,7 +1,10 @@
 ---
-id: 'demo'
+id: demo
+sidebar_label: Intro
 sidebar_position: 1
-sidebar_label: 'Intro'
+tags:
+  - test
+  - thing
 ---
 # Intro to Docusaurus
 
