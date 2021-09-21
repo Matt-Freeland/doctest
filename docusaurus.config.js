@@ -3,6 +3,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /* @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
+    scripts: [
+        'https://identity.netlify.com/v1/netlify-identity-widget.js',
+        {
+            src: '/_netlifyScript.js',
+            defer: true
+        }
+      ],
     noIndex: 'true',
     title: 'Help Test',
     tagline: 'Guides, Reference, and more!',
