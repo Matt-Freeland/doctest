@@ -16,7 +16,9 @@ collections:
       depth: 100
         # summary: '{{title}}'
     slug: "{{slug}}"
-    extension: mdx
+    extension:
+      - mdx 
+      - md
     format: frontmatter
     fields: 
      - {label: "Sidebar Label", name: "sidebar_label", widget: "string"}
