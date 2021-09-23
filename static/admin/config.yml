@@ -22,6 +22,6 @@ collections:
      - {label: "Sidebar Label", name: "sidebar_label", widget: "string"}
      - {label: "Sidebar Position", name: "sidebar_position", widget: "number", value_type: "int", min: 0}
      - {label: "tags", name: "tags", widget: "list", default: ["demo"]}
-     - {label: "Body", name: "body", widget: "text"}
+     - {label: "Body", name: "body", widget: "markdown"}
 
 
