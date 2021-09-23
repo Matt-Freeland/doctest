@@ -17,6 +17,7 @@ collections:
       summary: '{{title}}'
     slug: "{{slug}}"
     extension: mdx
+    format: frontmatter
     fields: 
      - {label: "Sidebar Label", name: "sidebar_label", widget: "string"}
      - {label: "Sidebar Position", name: "sidebar_position", widget: "number", value_type: "int", min: 0}
