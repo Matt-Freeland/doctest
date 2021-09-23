@@ -14,7 +14,7 @@ collections:
     create: true
     nested: 
       depth: 100
-        # summary: '{{title}}'
+      summary: '{{title}}'
     slug: "{{slug}}"
     extension:
       - mdx 
