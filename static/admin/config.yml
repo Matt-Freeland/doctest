@@ -12,14 +12,14 @@ collections:
     label: "Demo"
     folder: "demo"
     create: true
-    path: '{{fields.subfolder}}/{{slug}}'
+      # path: '{{fields.subfolder}}/{{slug}}'
     nested: 
       depth: 100
     summary: "{{filename}}"
     extension: mdx
     format: frontmatter
     fields: 
-     - {label: 'Subfolder', name: 'subfolder', widget: 'string', required: false}
+     - {label: 'Subfolder', name: 'subfolder', widget: 'string'}
      - {label: "Sidebar Label", name: "sidebar_label", widget: "string", required: false}
      - {label: "Title", name: "title", widget: "string"}
      - {label: "ID", name: "id", widget: "string"}
