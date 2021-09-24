@@ -16,10 +16,12 @@ collections:
       depth: 100
       summary: '{{title}}'
     slug: "{{slug}}"
+    path: "{{fields.slug}}"
     summary: "{{filename}}"
     extension: mdx
     format: frontmatter
     fields: 
+     - {label: "Slug" name: "slug", widget: "string"}
      - {label: "Sidebar Label", name: "sidebar_label", widget: "string"}
      - {label: "Title", name: "title", widget: "string"}
      - {label: "Sidebar Position", name: "sidebar_position", widget: "number", value_type: "int", min: 0}
