@@ -15,8 +15,8 @@ collections:
     nested: 
       depth: 100
       summary: '{{title}}'
-    slug: "{{fields.slug}}"
-    path: "/{{fields.path}}"
+    slug: "{{slug}}"
+    path: "{{fields.slug}}"
     summary: "{{filename}}"
     extension: mdx
     format: frontmatter
