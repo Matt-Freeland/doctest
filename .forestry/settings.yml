@@ -9,7 +9,7 @@ sections:
   label: Components
   create: all
   match: "**/*"
-  new_doc_ext: ".js"
+  new_doc_ext: js
 - type: directory
   path: demo
   label: Demo
