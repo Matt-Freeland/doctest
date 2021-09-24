@@ -10,22 +10,21 @@ public_folder: "/images"
 collections:
   - name: "demo"
     label: "Demo"
-    folder: "/demo"
+    folder: "demo"
     create: true
     nested: 
       depth: 100
-      summary: '{{title}}'
-    slug: "{{slug}}"
-    path: "{{fields.slug}}"
     summary: "{{filename}}"
     extension: mdx
     format: frontmatter
     fields: 
-     - {label: "Slug" name: "slug", widget: "string"}
-     - {label: "Sidebar Label", name: "sidebar_label", widget: "string"}
+     - {label: "Sidebar Label", name: "sidebar_label", widget: "string", required: false}
      - {label: "Title", name: "title", widget: "string"}
-     - {label: "Sidebar Position", name: "sidebar_position", widget: "number", value_type: "int", min: 0}
-     - {label: "tags", name: "tags", widget: "list", default: ["demo"]}
-     - {label: "Body", name: "body", widget: "markdown"}
-
-
+     - {label: "Sidebar Position", name: "sidebar_position", widget: "number", value_type: "int", min: 0, required: false}
+     - {label: "tags", name: "tags", widget: "list", default: ["demo"], required: false}
+     - {label: "Body", name: "body", widget: "markdown", required: false}
+    meta: {
+      path: {
+        name: 'path', label: 'Path', widget: 'string', index_file: 'index', hint: 'Path can be a subfolder'
+        }
+      }
