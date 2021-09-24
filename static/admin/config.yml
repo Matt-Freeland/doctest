@@ -1,6 +1,6 @@
 backend: 
   name: git-gateway
-  branch: main
+  branch: demo 
 
 publish_mode: editorial_workflow
 media_folder: "static/images"
@@ -16,10 +16,12 @@ collections:
       depth: 100
       summary: '{{title}}'
     slug: "{{slug}}"
+    summary: "{{filename}}"
     extension: mdx
     format: frontmatter
     fields: 
      - {label: "Sidebar Label", name: "sidebar_label", widget: "string"}
+     - {label: "Title", name: "title", widget: "string"}
      - {label: "Sidebar Position", name: "sidebar_position", widget: "number", value_type: "int", min: 0}
      - {label: "tags", name: "tags", widget: "list", default: ["demo"]}
      - {label: "Body", name: "body", widget: "markdown"}
