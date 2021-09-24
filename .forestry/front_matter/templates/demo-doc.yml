@@ -2,9 +2,12 @@
 label: Demo-Doc
 hide_body: false
 fields:
-- type: text
-  name: id
+- name: id
+  type: text
+  config:
+    required: false
   label: id
+  description: unique id for this document
 - type: number
   name: sidebar_position
   label: sidebar_position
@@ -15,5 +18,3 @@ fields:
   type: tag_list
   default: []
   label: tags
-pages:
-- demo/forestry-test.mdx
