@@ -18,3 +18,5 @@ fields:
   type: tag_list
   default: []
   label: tags
+pages:
+- demo/forestry-test-1.mdx
