@@ -5,6 +5,12 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
+  path: src/components
+  label: Components
+  create: all
+  match: "**/*"
+  new_doc_ext: ".js"
+- type: directory
   path: demo
   label: Demo
   create: all
