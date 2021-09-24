@@ -12,20 +12,17 @@ collections:
     label: "Demo"
     folder: "demo"
     create: true
+    path: '{{fields.subfolder}}/{{slug}}'
     nested: 
       depth: 100
     summary: "{{filename}}"
     extension: mdx
     format: frontmatter
     fields: 
+     - {label: 'Subfolder', name: 'subfolder', widget: 'string', required: false}
      - {label: "Sidebar Label", name: "sidebar_label", widget: "string", required: false}
      - {label: "Title", name: "title", widget: "string"}
      - {label: "ID", name: "id", widget: "string"}
      - {label: "Sidebar Position", name: "sidebar_position", widget: "number", value_type: "int", min: 0, required: false}
      - {label: "tags", name: "tags", widget: "list", default: ["demo"], required: false}
      - {label: "Body", name: "body", widget: "markdown", required: false}
-    meta: {
-      path: {
-        name: 'path', label: 'Path', widget: 'string', index_file: '{{fields.id}}', hint: 'Path can be a subfolder'
-        }
-      }
