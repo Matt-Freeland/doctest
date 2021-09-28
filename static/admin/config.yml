@@ -1,4 +1,4 @@
-backend: 
+backend:
   name: git-gateway
   branch: demo 
 
@@ -13,19 +13,17 @@ collections:
     folder: "demo"
     create: true
     slug: "{{slug}}"
-      # preview_path: "{{subfolder}}"
-      # path: "{{subfolder}}/{{slug}}"
+    path: "{{path}}/{{slug}}"
     nested: 
       depth: 100
     summary: "{{filename}}"
     extension: mdx
     format: frontmatter
     fields: 
-     - {label: 'Subfolder', name: 'subfolder', widget: 'string'}
+     - {label: 'Path', name: 'path', widget: 'string'}
      - {label: "Sidebar Label", name: "sidebar_label", widget: "string", required: false}
      - {label: "Title", name: "title", widget: "string"}
      - {label: "ID", name: "id", widget: "string"}
      - {label: "Sidebar Position", name: "sidebar_position", widget: "number", value_type: "int", min: 0, required: false}
      - {label: "tags", name: "tags", widget: "list", default: ["demo"], required: false}
      - {label: "Body", name: "body", widget: "markdown", required: false}
-    meta: {path: { label: 'Path', widget: 'string', index_file: '{{id}}' } }
