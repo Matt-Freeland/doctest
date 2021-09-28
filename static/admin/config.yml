@@ -12,7 +12,9 @@ collections:
     label: "Demo"
     folder: "demo"
     create: true
-      # path: "{{fields.subfolder}}/{{slug}}"
+    slug: "{{slug}}"
+    preview_path: "{{subfolder}}"
+    path: "{{subfolder}}/{{slug}}"
     nested: 
       depth: 100
     summary: "{{filename}}"
@@ -26,4 +28,4 @@ collections:
      - {label: "Sidebar Position", name: "sidebar_position", widget: "number", value_type: "int", min: 0, required: false}
      - {label: "tags", name: "tags", widget: "list", default: ["demo"], required: false}
      - {label: "Body", name: "body", widget: "markdown", required: false}
-    meta: {path: { label: 'Path', widget: 'string', index_file: '{slug}' } }
+       # meta: {path: { label: 'Path', widget: 'string', index_file: '{{slug}}' } }
