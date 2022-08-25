@@ -9,7 +9,7 @@ module.exports = {
             src: '/_netlifyScript.js',
             defer: true
         }
-      ],
+    ],
     noIndex: 'true',
     title: 'Help Test',
     tagline: 'Guides, Reference, and more!',
@@ -28,12 +28,12 @@ module.exports = {
         },
         navbar: {
             title: 'Doc Test',
-/*            logo: {
+            /*            logo: {
                 alt: 'My Site Logo',
                 src: 'img/Sonatype_Documentation_Logo.svg',
             },*/
             items: [
-               /* {
+                /* {
                     type: 'dropdown',
                     position: 'left',
                     label: 'Repository',
@@ -49,7 +49,14 @@ module.exports = {
                             docsPluginId: 'repo'
                         },
                     ],
-                },
+                },*/
+                {
+                    type: 'doc',
+                    docsPluginId: 'firewall',
+                    docId: 'intro',
+                    label: 'Firewall',
+                    position: 'left',
+                },/*
                 {
                     type: 'doc',
                     docsPluginId: 'lift',
@@ -73,15 +80,16 @@ module.exports = {
         prism: {
             theme: lightCodeTheme,
         },
-        gtag: {
-            trackingID: 'G-T89RL3L8H0',
-          //  anonymizeIP: true,
-        },  
+
     },
     presets: [
         [
             '@docusaurus/preset-classic',
             {
+                googleAnalytics: {
+                    trackingID: 'G-T89RL3L8H0',
+                    anonymizeIP: true,
+                },
                 docs: {
                     path: 'lift',
                     id: 'lift',
@@ -101,6 +109,15 @@ module.exports = {
         ],
     ],
     plugins: [
+        [
+            '@docusaurus/plugin-content-docs',
+            {
+                id: 'firewall',
+                path: 'firewall',
+                routeBasePath: 'firewall',
+                sidebarPath: require.resolve('./sidebarsFirewall.js')
+            },
+        ],
         [
             '@docusaurus/plugin-content-docs',
             {
